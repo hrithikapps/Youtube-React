@@ -6,6 +6,7 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 import { BiUserCircle } from "react-icons/bi";
 import { useDispatch } from "react-redux";
 import { toggleMenu } from "./utils/appSlice";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -14,17 +15,19 @@ const Header = () => {
   };
 
   return (
-    <div className="grid grid-flow-col p-2 mx-2 shadow-md align-middle">
-      <div className="flex col-span-1 ">
+    <div className="grid grid-flow-col p-2 mx-2 shadow-md align-middle cursor-pointer">
+      <div className="flex col-span-1  ">
         <IoReorderThree
           onClick={() => toggleMenuHandler()}
           className="h-8 w-8 mr-3 cursor-pointer"
         />
+        {/* <Link to="/"> */}
         <img
           className="h-7"
           src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Logo_of_YouTube_%282015-2017%29.svg"
           alt="Youtube Logo"
         />
+        {/* </Link> */}
       </div>
       <div className="flex col-span-10 justify-center">
         <input

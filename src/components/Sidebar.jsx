@@ -14,6 +14,7 @@ import { BiLike, BiTrendingUp } from "react-icons/bi";
 import { BsMusicNoteBeamed } from "react-icons/bs";
 import { SiFacebookgaming } from "react-icons/si";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
@@ -23,10 +24,11 @@ const Sidebar = () => {
       <ul className="leading-10">
         <li className="flex text-base">
           {" "}
-          <AiFillHome className="mt-1 mr-6 h-5 w-5" /> Home
+          <Link to="/" className="flex">
+            <AiFillHome className="mt-1 mr-6 h-5 w-5" /> Home{" "}
+          </Link>
         </li>
         <li className="flex text-base">
-          {" "}
           <MdVideocam className="mt-1 mr-6 h-5 w-5" /> Shorts
         </li>
         <li className="flex text-base">
