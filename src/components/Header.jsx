@@ -9,6 +9,7 @@ import { toggleMenu } from "./utils/appSlice";
 import { Link } from "react-router-dom";
 import { YOUTUBE_SUGGESTIONS_API } from "./Constants";
 import { cacheResults } from "./utils/searchSlice";
+import LOGO from "../../data/youtube logo.jpg";
 
 const Header = () => {
   //Dispatching an action for the Toggle of Sidebar
@@ -65,11 +66,14 @@ const Header = () => {
           className="h-8 w-8 mr-3 cursor-pointer"
         />
         {/* <Link to="/"> */}
+
         <img
-          className="h-7 cursor-pointer"
-          src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Logo_of_YouTube_%282015-2017%29.svg"
+          className="h-7 cursor-pointer bg-white"
+          src={LOGO}
+          // src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Logo_of_YouTube_%282015-2017%29.svg"
           alt="Youtube Logo"
         />
+
         {/* </Link> */}
       </div>
       <div className="flex col-span-10 justify-center">
