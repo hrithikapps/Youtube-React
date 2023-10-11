@@ -20,7 +20,7 @@ const VideoContainer = () => {
 
   // if (!videos) return null;
   return (
-    <div className="flex flex-wrap gap-3 p-4 pl-8">
+    <div className="flex flex-wrap gap-3 p-4 pl-8 justify-center ">
       {videos?.map((video) => {
         // console.log("video", video);
         return (

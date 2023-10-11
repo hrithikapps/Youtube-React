@@ -20,7 +20,7 @@ const Sidebar = () => {
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
 
   return !isMenuOpen ? null : (
-    <div className="p-5 m-2 shadow-sm w-52 ">
+    <div className="p-5 m-2 shadow-sm w-52">
       <ul className="leading-10">
         <li className="flex text-base">
           {" "}
